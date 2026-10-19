@@ -1,0 +1,113 @@
+{% extends "admin/base_admin.html" %}
+
+{% block title %}Dashboard | Candles Admin{% endblock %}
+{% block page_heading %}Dashboard Overview{% endblock %}
+
+{% block content %}
+<div class="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+    <div>
+        <p class="text-sm text-stone-500">Welcome to your store workspace.</p>
+        <h2 class="mt-1 text-2xl font-bold text-stone-900 sm:text-3xl">
+            Your candles, at a glance.
+        </h2>
+    </div>
+
+    <a href="{{ url_for('admin_add_product') }}"
+        class="inline-flex items-center justify-center rounded-lg bg-stone-950 px-5 py-3 text-sm font-semibold text-white hover:bg-stone-800">
+        <span class="mr-2 text-lg">+</span> Add candle
+    </a>
+</div>
+
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+    <div class="rounded-xl border border-stone-200 bg-white p-6">
+        <p class="text-sm font-medium text-stone-500">Total candles</p>
+        <div class="mt-4 flex items-end justify-between">
+            <h3 class="text-3xl font-bold text-stone-900">{{ total_products }}</h3>
+            <span class="text-2xl text-amber-600">◇</span>
+        </div>
+        <p class="mt-3 text-xs text-stone-400">All products in your database</p>
+    </div>
+
+    <div class="rounded-xl border border-stone-200 bg-white p-6">
+        <p class="text-sm font-medium text-stone-500">Active products</p>
+        <div class="mt-4 flex items-end justify-between">
+            <h3 class="text-3xl font-bold text-stone-900">{{ active_products }}</h3>
+            <span class="text-2xl text-emerald-600">✓</span>
+        </div>
+        <p class="mt-3 text-xs text-stone-400">Available for customers to buy</p>
+    </div>
+
+    <div class="rounded-xl border border-stone-200 bg-white p-6">
+        <p class="text-sm font-medium text-stone-500">Out of stock</p>
+        <div class="mt-4 flex items-end justify-between">
+            <h3 class="text-3xl font-bold text-stone-900">{{ out_of_stock }}</h3>
+            <span class="text-2xl text-red-500">!</span>
+        </div>
+        <p class="mt-3 text-xs text-stone-400">Products with zero stock</p>
+    </div>
+</div>
+
+<div class="mt-8 overflow-hidden rounded-xl border border-stone-200 bg-white">
+    <div
+        class="flex flex-col justify-between gap-3 border-b border-stone-200 px-5 py-5 sm:flex-row sm:items-center sm:px-6">
+        <div>
+            <h3 class="font-semibold text-stone-900">Recently added candles</h3>
+            <p class="mt-1 text-sm text-stone-500">Your latest products</p>
+        </div>
+
+        <a href="{{ url_for('admin_products') }}" class="text-sm font-semibold text-amber-700 hover:text-amber-900">
+            View all products →
+        </a>
+    </div>
+
+    {% if recent_products %}
+    <div class="divide-y divide-stone-100">
+        {% for product in recent_products %}
+        <div class="flex items-center gap-4 px-5 py-4 sm:px-6">
+            {% if product.image %}
+            <img src="{{ product.image }}" alt="{{ product.name }}"
+                class="h-14 w-14 rounded-lg border border-stone-200 object-cover">
+            {% else %}
+            <div
+                class="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-amber-50 text-2xl text-amber-700">
+                ◇
+            </div>
+            {% endif %}
+
+            <div class="min-w-0 flex-1">
+                <p class="truncate font-semibold text-stone-800">
+                    {{ product.name }}
+                </p>
+                <p class="mt-1 text-xs text-stone-500">
+                    {{ product.scent or 'Signature scent' }} ·
+                    {{ product.size or 'Standard size' }}
+                </p>
+            </div>
+
+            <div class="text-right">
+                <p class="font-semibold text-stone-900">
+                    KES {{ "{:,.2f}".format(product.price) }}
+                </p>
+                <p
+                    class="mt-1 text-xs {% if product.stock == 0 %}text-red-600{% elif product.stock < 5 %}text-amber-700{% else %}text-stone-500{% endif %}">
+                    {{ product.stock }} in stock
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="px-6 py-14 text-center">
+        <div class="text-4xl text-stone-300">◇</div>
+        <h4 class="mt-4 font-semibold text-stone-800">No candles yet</h4>
+        <p class="mt-2 text-sm text-stone-500">
+            Add your first candle to start building your store.
+        </p>
+        <a href="{{ url_for('admin_add_product') }}"
+            class="mt-5 inline-block rounded-lg bg-stone-950 px-5 py-3 text-sm font-semibold text-white hover:bg-stone-800">
+            Add your first candle
+        </a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

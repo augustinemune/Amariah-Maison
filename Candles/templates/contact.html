@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="mx-auto max-w-6xl px-5 py-12 sm:py-16">
+
+    <!-- Heading -->
+    <div class="mb-10 text-center">
+        <p class="mb-3 text-xs uppercase tracking-[0.3em] text-[#9b7957]">
+            Get in touch
+        </p>
+        <h1 class="text-3xl font-medium sm:text-4xl">
+            We'd love to hear from you.
+        </h1>
+        <p class="mx-auto mt-3 max-w-md text-sm leading-6 text-[#82776b]">
+            Questions about our candles or an order? Send us a message.
+        </p>
+    </div>
+
+    <!-- Contact content -->
+    <div class="grid overflow-hidden rounded-2xl border border-[#e9e1d7] bg-white md:grid-cols-5">
+
+        <!-- Contact details -->
+        <div class="bg-[#49392c] p-7 text-white sm:p-9 md:col-span-2">
+            <h2 class="text-xl font-medium">Contact information</h2>
+            <p class="mt-2 text-sm leading-6 text-[#ded2c4]">
+                Reach out and let us help you find the perfect candle.
+            </p>
+
+            <div class="mt-9 space-y-7">
+
+                <div>
+                    <p class="text-xs uppercase tracking-widest text-[#cbb293]">
+                        Email
+                    </p>
+                    <a href="mailto:hello@example.com" class="mt-2 block break-all text-sm hover:text-[#e3c8a5]">
+                        hello@example.com
+                    </a>
+                </div>
+
+                <div>
+                    <p class="text-xs uppercase tracking-widest text-[#cbb293]">
+                        Phone
+                    </p>
+                    <a href="tel:+254700000000" class="mt-2 block text-sm hover:text-[#e3c8a5]">
+                        +254 700 000 000
+                    </a>
+                </div>
+
+                <div>
+                    <p class="text-xs uppercase tracking-widest text-[#cbb293]">
+                        Opening hours
+                    </p>
+                    <p class="mt-2 text-sm leading-6 text-[#eee5da]">
+                        Monday – Friday: 9 AM – 5 PM<br>
+                        Saturday: 10 AM – 3 PM
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="mt-10 border-t border-white/15 pt-5">
+                <p class="text-sm italic text-[#ded2c4]">
+                    Thoughtfully made. Beautifully scented.
+                </p>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="p-6 sm:p-9 md:col-span-3">
+            <h2 class="text-xl font-medium">Send a message</h2>
+            <p class="mt-1 text-sm text-[#82776b]">
+                Fill in the form and we'll get back to you.
+            </p>
+
+            <form action="{{ url_for('contact') }}" method="POST" class="mt-7 space-y-5">
+
+                {% if csrf_token is defined %}
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                {% endif %}
+
+                <div class="grid gap-5 sm:grid-cols-2">
+                    <div>
+                        <label for="name" class="mb-2 block text-sm font-medium">
+                            Full name
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required maxlength="100"
+                            class="w-full rounded-lg border border-[#e5ddd3] px-4 py-3 text-sm outline-none transition focus:border-[#98734f] focus:ring-1 focus:ring-[#98734f]">
+                    </div>
+
+                    <div>
+                        <label for="email" class="mb-2 block text-sm font-medium">
+                            Email address
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required
+                            maxlength="254"
+                            class="w-full rounded-lg border border-[#e5ddd3] px-4 py-3 text-sm outline-none transition focus:border-[#98734f] focus:ring-1 focus:ring-[#98734f]">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="subject" class="mb-2 block text-sm font-medium">
+                        Subject
+                    </label>
+                    <select id="subject" name="subject" required
+                        class="w-full rounded-lg border border-[#e5ddd3] bg-white px-4 py-3 text-sm outline-none focus:border-[#98734f] focus:ring-1 focus:ring-[#98734f]">
+                        <option value="" disabled selected>
+                            Choose a subject
+                        </option>
+                        <option value="Product enquiry">Product enquiry</option>
+                        <option value="Order enquiry">Order enquiry</option>
+                        <option value="Delivery">Delivery</option>
+                        <option value="Bulk orders">Bulk orders</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message" class="mb-2 block text-sm font-medium">
+                        Message
+                    </label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required
+                        minlength="10" maxlength="5000"
+                        class="w-full resize-y rounded-lg border border-[#e5ddd3] px-4 py-3 text-sm outline-none transition focus:border-[#98734f] focus:ring-1 focus:ring-[#98734f]"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full rounded-lg bg-[#49392c] px-6 py-3.5 text-sm font-medium text-white transition hover:bg-[#72553c] sm:w-auto">
+                    Send message <span aria-hidden="true">→</span>
+                </button>
+
+            </form>
+        </div>
+
+    </div>
+</main>
+
+{% endblock content %}

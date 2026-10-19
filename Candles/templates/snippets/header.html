@@ -1,0 +1,209 @@
+<div
+    class="bg-stone-900 px-3 py-2 text-center text-[10px] leading-relaxed text-white sm:px-4 sm:py-2.5 sm:text-xs md:text-sm">
+    <p>
+        Light up your moments.
+        <span class="font-medium text-amber-300">
+            Enjoy 10% off your first order.
+        </span>
+    </p>
+</div>
+
+<header class="sticky top-0 z-50 border-b border-stone-200 bg-[#fffdf9]/95 backdrop-blur-md">
+
+    <!-- Main Header -->
+    <div
+        class="mx-auto flex w-full max-w-screen-2xl items-center justify-between gap-2 px-3 py-3 sm:gap-4 sm:px-5 sm:py-4 md:px-6 lg:px-10 xl:px-14">
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" type="button"
+            class="inline-flex size-9 shrink-0 items-center justify-center rounded-full text-stone-700 transition hover:bg-stone-100 focus-visible:outline-2 focus-visible:outline-amber-700 sm:size-10 md:hidden"
+            aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-5 sm:size-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="1.7">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+        </button>
+
+        <!-- Brand -->
+        <a href="/" class="flex min-w-0 shrink items-center md:items-start" aria-label="Candles home">
+
+            <span class="flex min-w-0 flex-col items-center md:items-start">
+                <span
+                    class="whitespace-nowrap font-serif text-lg font-semibold tracking-[0.12em] text-stone-900 min-[380px]:text-xl sm:text-2xl lg:text-3xl lg:tracking-[0.18em]">
+                    CANDLES<span class="text-amber-700">.</span>
+                </span>
+
+                <span
+                    class="mt-0.5 hidden text-[9px] font-medium uppercase tracking-[0.2em] text-stone-500 min-[380px]:block sm:text-[10px] lg:tracking-[0.3em]">
+                    Light · Warmth · Home
+                </span>
+            </span>
+        </a>
+
+        <!-- Desktop / Tablet Navigation -->
+        <nav class="hidden items-center gap-3 md:flex lg:gap-5 xl:gap-8" aria-label="Main navigation">
+            <a href="/"
+                class="whitespace-nowrap text-xs font-medium text-stone-700 transition hover:text-amber-800 lg:text-sm">
+                Home
+            </a>
+
+            <a href="/shop"
+                class="whitespace-nowrap text-xs font-medium text-stone-700 transition hover:text-amber-800 lg:text-sm">
+                Shop All
+            </a>
+
+            <a href="/collections"
+                class="whitespace-nowrap text-xs font-medium text-stone-700 transition hover:text-amber-800 lg:text-sm">
+                Collections
+            </a>
+
+            <a href="/about"
+                class="whitespace-nowrap text-xs font-medium text-stone-700 transition hover:text-amber-800 lg:text-sm">
+                Our Story
+            </a>
+
+            <a href="/contact"
+                class="whitespace-nowrap text-xs font-medium text-stone-700 transition hover:text-amber-800 lg:text-sm">
+                Contact
+            </a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="flex shrink-0 items-center justify-end gap-0.5 sm:gap-1 lg:gap-2">
+
+            <!-- Search -->
+            <a href="/search"
+                class="inline-flex size-9 items-center justify-center rounded-full text-stone-700 transition hover:bg-stone-100 hover:text-amber-800 sm:size-10"
+                aria-label="Search products">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 sm:size-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.7">
+                    <circle cx="10.8" cy="10.8" r="6.8" />
+                    <path stroke-linecap="round" d="m16 16 4.5 4.5" />
+                </svg>
+            </a>
+
+            <!-- Account: hidden on narrow phones -->
+            <a href="/account"
+                class="hidden size-10 items-center justify-center rounded-full text-stone-700 transition hover:bg-stone-100 hover:text-amber-800 min-[400px]:inline-flex"
+                aria-label="My account">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.7">
+                    <circle cx="12" cy="8" r="3.5" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 20a7 7 0 0 1 14 0" />
+                </svg>
+            </a>
+
+            <!-- Shopping Cart -->
+            <a href="/cart"
+                class="relative inline-flex size-9 items-center justify-center rounded-full text-stone-700 transition hover:bg-stone-100 hover:text-amber-800 sm:size-10"
+                aria-label="Shopping cart">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4 sm:size-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.7">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3 3h2l2.2 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6" />
+                    <circle cx="10" cy="20" r="1" />
+                    <circle cx="18" cy="20" r="1" />
+                </svg>
+
+                <span id="cart-count"
+                    class="absolute right-0 top-0 flex size-4 items-center justify-center rounded-full bg-amber-700 text-[9px] font-bold text-white sm:size-[18px]">0</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-menu" class="hidden border-t border-stone-200 bg-[#fffdf9] px-4 py-3 sm:px-6 md:hidden"
+        aria-label="Mobile navigation" aria-hidden="true" inert>
+        <div class="mx-auto flex w-full max-w-lg flex-col gap-1">
+
+            <a href="/" class="rounded-lg px-4 py-3 text-sm font-medium text-stone-800 transition hover:bg-stone-100">
+                Home
+            </a>
+
+            <a href="/shop"
+                class="rounded-lg px-4 py-3 text-sm font-medium text-stone-800 transition hover:bg-stone-100">
+                Shop All
+            </a>
+
+            <a href="/collections"
+                class="rounded-lg px-4 py-3 text-sm font-medium text-stone-800 transition hover:bg-stone-100">
+                Collections
+            </a>
+
+            <a href="/about"
+                class="rounded-lg px-4 py-3 text-sm font-medium text-stone-800 transition hover:bg-stone-100">
+                Our Story
+            </a>
+
+            <a href="/contact"
+                class="rounded-lg px-4 py-3 text-sm font-medium text-stone-800 transition hover:bg-stone-100">
+                Contact
+            </a>
+
+            <a href="/account"
+                class="mt-2 rounded-lg border border-stone-300 px-4 py-3 text-center text-sm font-medium text-stone-800 transition hover:border-amber-700 hover:text-amber-800 min-[400px]:hidden">
+                My Account
+            </a>
+
+        </div>
+    </nav>
+</header>
+
+<script>
+    (() => {
+        const initHeader = () => {
+            const button = document.getElementById("mobile-menu-button");
+            const menu = document.getElementById("mobile-menu");
+
+            if (!button || !menu || button.dataset.initialized) return;
+
+            button.dataset.initialized = "true";
+
+            const closeMenu = () => {
+                menu.classList.add("hidden");
+                menu.setAttribute("aria-hidden", "true");
+                menu.setAttribute("inert", "");
+                button.setAttribute("aria-expanded", "false");
+                button.setAttribute("aria-label", "Open navigation menu");
+            };
+
+            button.addEventListener("click", () => {
+                const isOpen = button.getAttribute("aria-expanded") === "true";
+
+                if (isOpen) {
+                    closeMenu();
+                } else {
+                    menu.classList.remove("hidden");
+                    menu.removeAttribute("inert");
+                    menu.setAttribute("aria-hidden", "false");
+                    button.setAttribute("aria-expanded", "true");
+                    button.setAttribute("aria-label", "Close navigation menu");
+                }
+            });
+
+            menu.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", closeMenu);
+            });
+
+            window.addEventListener("resize", () => {
+                if (window.innerWidth >= 768) closeMenu();
+            });
+
+            document.addEventListener("keydown", event => {
+                if (event.key === "Escape") {
+                    closeMenu();
+                    button.focus();
+                }
+            });
+        };
+
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", initHeader, { once: true });
+        } else {
+            initHeader();
+        }
+    })();
+</script>

@@ -1,0 +1,246 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+
+    <!-- HERO -->
+    <section class="about-hero overflow-hidden border-b border-[#eae1d6]">
+        <div
+            class="about-hero__container mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-2 lg:px-12 lg:py-24">
+
+            <div class="about-hero__content">
+                <p class="about-hero__eyebrow text-xs font-semibold uppercase tracking-[0.3em] text-[#98734f]">
+                    Our story
+                </p>
+
+                <h1
+                    class="about-hero__title mt-5 max-w-xl text-4xl font-light leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+                    Making everyday moments
+                    <span class="font-medium italic text-[#98734f]">
+                        feel special.
+                    </span>
+                </h1>
+
+                <p class="about-hero__description mt-6 max-w-lg text-base leading-8 text-[#786d61]">
+                    We believe a beautiful fragrance can transform a room,
+                    create a memory, and bring a little more warmth into
+                    everyday life.
+                </p>
+
+                <a href="/shop"
+                    class="about-hero__button mt-8 inline-flex items-center gap-3 rounded-full bg-[#49392c] px-7 py-3.5 text-sm font-medium text-white transition hover:bg-[#72553c]">
+                    Explore our candles
+                    <span aria-hidden="true">→</span>
+                </a>
+            </div>
+
+            <!-- Decorative candle illustration -->
+            <div
+                class="about-hero__visual relative mx-auto flex h-80 w-full max-w-md items-center justify-center sm:h-96">
+
+                <div class="about-hero__glow absolute h-64 w-64 rounded-full bg-[#e8d8c2] blur-3xl sm:h-80 sm:w-80">
+                </div>
+
+                <div
+                    class="about-candle about-candle--large relative z-10 flex h-56 w-40 items-end justify-center rounded-b-2xl rounded-t-lg border border-white/70 bg-gradient-to-br from-[#e0cfb8] via-[#b99b78] to-[#8c6d4d] shadow-2xl sm:h-64 sm:w-44">
+                    <div class="about-candle__rim absolute -top-1 h-3 w-full rounded-[50%] bg-[#eadcc8]"></div>
+                    <div class="about-candle__wick absolute -top-10 h-10 w-px bg-[#49392c]"></div>
+                    <div
+                        class="about-candle__flame absolute -top-9 h-9 w-5 rounded-full bg-gradient-to-t from-[#e9a34d] via-[#ffe7a0] to-transparent blur-[1px]">
+                    </div>
+
+                    <div class="about-candle__label mb-8 text-center text-[#fff8ed]">
+                        <span class="block text-[10px] uppercase tracking-[0.35em]">CANDLES</span>
+                        <span class="mt-2 block text-sm font-light italic">Made with care</span>
+                    </div>
+                </div>
+
+                <div
+                    class="about-candle about-candle--small absolute bottom-5 left-3 z-20 h-32 w-24 rounded-b-xl rounded-t-md border border-white/70 bg-gradient-to-br from-[#eee0cb] to-[#bfa184] shadow-lg sm:bottom-8 sm:left-7">
+                    <div class="absolute -top-1 h-2 w-full rounded-[50%] bg-[#f5e9d8]"></div>
+                </div>
+
+                <div
+                    class="about-hero__note absolute right-0 top-8 z-20 rounded-full border border-white/70 bg-white/80 px-4 py-3 text-xs text-[#72553c] shadow-sm backdrop-blur">
+                    A little light, a lot of feeling
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR PHILOSOPHY -->
+    <section class="about-philosophy mx-auto max-w-4xl px-5 py-16 text-center sm:px-8 sm:py-20">
+
+        <p class="about-philosophy__eyebrow text-xs font-semibold uppercase tracking-[0.3em] text-[#98734f]">
+            What we believe
+        </p>
+
+        <h2 class="about-philosophy__title mt-4 text-3xl font-light leading-snug sm:text-4xl">
+            It's not just a candle.
+            <span class="italic text-[#98734f]">It's a feeling.</span>
+        </h2>
+
+        <p class="about-philosophy__text mx-auto mt-6 max-w-2xl text-sm leading-8 text-[#786d61] sm:text-base">
+            From a quiet evening at home to a gathering with the people
+            you love, candles help make ordinary moments memorable.
+            Our aim is to bring together inviting scents, thoughtful
+            design, and a simple sense of comfort.
+        </p>
+
+    </section>
+
+    <!-- OUR VALUES -->
+    <section class="about-values bg-[#f0e8dd]">
+        <div class="about-values__container mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20 lg:px-12">
+
+            <div class="about-values__heading mx-auto mb-12 max-w-xl text-center">
+                <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#98734f]">
+                    The details matter
+                </p>
+
+                <h2 class="mt-4 text-3xl font-light sm:text-4xl">
+                    What makes us different
+                </h2>
+            </div>
+
+            <div class="about-values__grid grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+                <article
+                    class="about-value-card rounded-2xl border border-[#e4d8c9] bg-[#faf8f5] p-7 transition hover:-translate-y-1 hover:shadow-md">
+                    <span class="about-value-card__number text-sm font-medium tracking-widest text-[#98734f]">01</span>
+
+                    <h3 class="about-value-card__title mt-5 text-lg font-medium">
+                        Thoughtful fragrances
+                    </h3>
+
+                    <p class="about-value-card__description mt-3 text-sm leading-7 text-[#786d61]">
+                        Scents chosen to help create an atmosphere that
+                        feels relaxing, welcoming, and personal.
+                    </p>
+                </article>
+
+                <article
+                    class="about-value-card rounded-2xl border border-[#e4d8c9] bg-[#faf8f5] p-7 transition hover:-translate-y-1 hover:shadow-md">
+                    <span class="about-value-card__number text-sm font-medium tracking-widest text-[#98734f]">02</span>
+
+                    <h3 class="about-value-card__title mt-5 text-lg font-medium">
+                        Simple, timeless design
+                    </h3>
+
+                    <p class="about-value-card__description mt-3 text-sm leading-7 text-[#786d61]">
+                        Candle designs that complement your home and
+                        make thoughtful gifts for special occasions.
+                    </p>
+                </article>
+
+                <article
+                    class="about-value-card rounded-2xl border border-[#e4d8c9] bg-[#faf8f5] p-7 transition hover:-translate-y-1 hover:shadow-md sm:col-span-2 lg:col-span-1">
+                    <span class="about-value-card__number text-sm font-medium tracking-widest text-[#98734f]">03</span>
+
+                    <h3 class="about-value-card__title mt-5 text-lg font-medium">
+                        Care in every detail
+                    </h3>
+
+                    <p class="about-value-card__description mt-3 text-sm leading-7 text-[#786d61]">
+                        We focus on the little things that make choosing,
+                        enjoying, and gifting a candle feel special.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR APPROACH -->
+    <section
+        class="about-approach mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-2 lg:gap-20 lg:px-12">
+
+        <div
+            class="about-approach__visual relative flex min-h-72 items-center justify-center overflow-hidden rounded-2xl bg-[#e9ddcd] p-8 sm:min-h-96">
+
+            <div class="about-approach__circle absolute h-60 w-60 rounded-full border border-[#c9b398] sm:h-72 sm:w-72">
+            </div>
+
+            <div
+                class="about-approach__circle about-approach__circle--inner absolute h-44 w-44 rounded-full border border-[#c9b398]/70 sm:h-56 sm:w-56">
+            </div>
+
+            <div class="about-approach__quote relative max-w-xs text-center">
+                <span class="block text-4xl font-light text-[#98734f]">“</span>
+
+                <p class="text-2xl font-light italic leading-relaxed text-[#49392c] sm:text-3xl">
+                    Create space for the moments that matter.
+                </p>
+
+                <span class="mt-5 block text-xs uppercase tracking-[0.25em] text-[#98734f]">
+                    The Candles philosophy
+                </span>
+            </div>
+        </div>
+
+        <div class="about-approach__content">
+            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#98734f]">
+                More than a fragrance
+            </p>
+
+            <h2 class="mt-4 text-3xl font-light leading-snug sm:text-4xl">
+                Bringing warmth into your everyday rituals.
+            </h2>
+
+            <p class="mt-5 text-sm leading-8 text-[#786d61] sm:text-base">
+                Your home should feel like your own sanctuary. A familiar
+                fragrance can make a slow morning more peaceful, a dinner
+                more intimate, or an evening feel like a fresh start.
+            </p>
+
+            <p class="mt-4 text-sm leading-8 text-[#786d61] sm:text-base">
+                That's the experience we want our candles to inspire:
+                simple, beautiful moments that stay with you.
+            </p>
+
+            <a href="/contact"
+                class="mt-7 inline-flex items-center gap-3 border-b border-[#98734f] pb-2 text-sm font-medium text-[#72553c] transition hover:text-[#33291f]">
+                Get to know us
+                <span aria-hidden="true">→</span>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="about-cta px-5 pb-16 sm:px-8 sm:pb-20">
+        <div
+            class="about-cta__container mx-auto max-w-7xl rounded-2xl bg-[#49392c] px-6 py-12 text-center text-white sm:px-12 sm:py-16">
+
+            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#d6bd9d]">
+                Find your moment
+            </p>
+
+            <h2 class="mx-auto mt-4 max-w-xl text-3xl font-light leading-snug sm:text-4xl">
+                Let your next favourite fragrance find you.
+            </h2>
+
+            <p class="mx-auto mt-4 max-w-lg text-sm leading-7 text-[#ded2c4]">
+                Explore our collection and find a little warmth for your
+                home or a thoughtful gift for someone special.
+            </p>
+
+            <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+                <a href="/shop"
+                    class="inline-flex items-center justify-center rounded-full bg-[#f2e5d3] px-7 py-3.5 text-sm font-medium text-[#49392c] transition hover:bg-white">
+                    Shop candles
+                </a>
+
+                <a href="/contact"
+                    class="inline-flex items-center justify-center rounded-full border border-white/30 px-7 py-3.5 text-sm font-medium text-white transition hover:bg-white/10">
+                    Contact us
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+{% endblock content %}

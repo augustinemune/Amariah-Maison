@@ -1,0 +1,61 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Flask
+instance/
+.webassets-cache/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Local databases and data exports
+*.sqlite3
+*.db
+
+# Node.js and generated dependencies
+node_modules/
+
+# Generated frontend assets (uncomment if you don't want to commit them)
+# Candles/static/output.css
+
+# Local backups
+*.backup
+*.bak

@@ -1,0 +1,795 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="flex-1">
+
+    <!-- =====================================================
+             HERO SECTION
+        ====================================================== -->
+    <section class="relative isolate overflow-hidden bg-[#f5ede2]">
+
+        <div
+            class="mx-auto grid min-h-[560px] w-full max-w-screen-2xl grid-cols-1 items-center gap-8 px-4 py-12 sm:px-6 sm:py-16 md:min-h-[600px] md:grid-cols-2 md:gap-8 md:py-12 lg:min-h-[680px] lg:gap-14 lg:px-10 xl:px-14">
+
+            <!-- Hero Text -->
+            <div class="relative z-10 mx-auto w-full max-w-xl text-center md:mx-0 md:text-left">
+
+                <span
+                    class="inline-flex items-center gap-2 rounded-full border border-amber-900/15 bg-white/60 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-amber-900 sm:text-xs">
+                    <span class="size-1.5 rounded-full bg-amber-700"></span>
+                    Find your moment of calm
+                </span>
+
+                <h1
+                    class="mt-6 font-serif text-4xl leading-[1.12] tracking-tight text-stone-900 min-[400px]:text-5xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl">
+                    A little light.
+                    <br>
+                    <span class="font-normal italic text-amber-800">
+                        A lot of warmth.
+                    </span>
+                </h1>
+
+                <p
+                    class="mx-auto mt-6 max-w-lg text-sm leading-7 text-stone-600 sm:text-base sm:leading-8 md:mx-0 lg:text-lg">
+                    Create a home that feels like you. Discover beautiful
+                    candles and inviting fragrances for slow mornings,
+                    cozy evenings, and all the moments in between.
+                </p>
+
+                <div class="mt-8 flex flex-col justify-center gap-3 min-[420px]:flex-row md:justify-start">
+
+                    <a href="/shop"
+                        class="inline-flex min-h-12 items-center justify-center gap-3 rounded-lg bg-stone-900 px-7 py-3 text-sm font-medium text-white transition duration-300 hover:bg-amber-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900">
+                        Explore Candles
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.7">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                        </svg>
+                    </a>
+
+                    <a href="/collections"
+                        class="inline-flex min-h-12 items-center justify-center rounded-lg border border-stone-300 bg-white/50 px-7 py-3 text-sm font-medium text-stone-800 transition hover:border-amber-800 hover:text-amber-900">
+                        View Collections
+                    </a>
+                </div>
+
+                <div
+                    class="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-xs text-stone-600 md:justify-start lg:gap-x-8">
+
+                    <span class="inline-flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 text-amber-800" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 3 4.5 6v5.5c0 4.5 3 7.5 7.5 9.5 4.5-2 7.5-5 7.5-9.5V6L12 3z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m9 12 2 2 4-4" />
+                        </svg>
+                        Thoughtfully selected
+                    </span>
+
+                    <span class="inline-flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 text-amber-800" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="1.6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11z" />
+                        </svg>
+                        Made for meaningful moments
+                    </span>
+                </div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="relative mx-auto w-full max-w-lg md:max-w-none">
+
+                <div
+                    class="absolute -right-3 top-0 size-24 rounded-full bg-amber-200/40 blur-3xl sm:size-40 md:-right-6 md:size-56">
+                </div>
+
+                <div
+                    class="relative overflow-hidden rounded-t-[48%] rounded-b-2xl border border-white/70 bg-[#e9d9c5] p-3 shadow-xl shadow-stone-900/5 sm:rounded-t-[50%] sm:p-4">
+
+                    <!-- Decorative candle illustration made with HTML and CSS -->
+                    <div
+                        class="relative flex min-h-[330px] items-center justify-center overflow-hidden rounded-t-[48%] rounded-b-xl bg-gradient-to-br from-[#eee1d0] via-[#e5cfb6] to-[#cbb094] sm:min-h-[410px] md:min-h-[420px] lg:min-h-[490px]">
+
+                        <!-- Background decoration -->
+                        <div class="absolute -left-12 top-16 size-40 rounded-full border border-white/30"></div>
+                        <div class="absolute -left-6 top-24 size-28 rounded-full border border-white/30"></div>
+
+                        <div
+                            class="absolute bottom-8 left-1/2 h-12 w-4/5 -translate-x-1/2 rounded-[50%] bg-stone-900/10 blur-xl">
+                        </div>
+
+                        <!-- Back candle -->
+                        <div
+                            class="absolute bottom-[24%] left-[19%] flex h-40 w-20 flex-col items-center justify-end rounded-t-2xl rounded-b-lg border border-white/20 bg-gradient-to-r from-[#8b674f] via-[#b08a69] to-[#76533d] shadow-xl sm:left-[20%] sm:h-48 sm:w-24 md:h-44 md:w-24 lg:h-52 lg:w-28">
+
+                            <div class="absolute -top-1 h-2 w-full rounded-full bg-[#d5b99a]"></div>
+
+                            <div class="mb-5 text-center">
+                                <span class="block font-serif text-xs tracking-[0.2em] text-[#f6e9d8]">
+                                    CANDLES
+                                </span>
+                                <span class="mt-1 block text-[7px] uppercase tracking-[0.15em] text-[#f6e9d8]/80">
+                                    Warm amber
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Main candle -->
+                        <div
+                            class="relative z-10 flex h-48 w-28 flex-col items-center justify-end rounded-t-2xl rounded-b-xl border border-white/60 bg-gradient-to-r from-[#fff9ef] via-[#f7ead7] to-[#dfc9ae] shadow-2xl shadow-stone-900/20 sm:h-60 sm:w-36 md:h-56 md:w-32 lg:h-64 lg:w-36">
+
+                            <!-- Flame -->
+                            <div class="absolute -top-12 left-1/2 flex -translate-x-1/2 flex-col items-center">
+                                <div
+                                    class="h-8 w-5 rotate-6 rounded-[80%_20%_65%_35%] bg-gradient-to-t from-orange-400 via-amber-300 to-yellow-100 shadow-lg shadow-amber-400/40">
+                                </div>
+                                <div class="absolute top-3 h-4 w-2 rounded-full bg-yellow-50"></div>
+                                <div class="mt-1 h-3 w-px bg-stone-700"></div>
+                            </div>
+
+                            <!-- Wax surface -->
+                            <div class="absolute -top-1 h-2 w-full rounded-full border border-white/80 bg-[#fffaf0]">
+                            </div>
+
+                            <div class="mb-8 text-center sm:mb-10">
+                                <span class="block font-serif text-sm tracking-[0.2em] text-stone-800 sm:text-base">
+                                    CANDLES
+                                </span>
+                                <span class="mt-2 block text-[8px] uppercase tracking-[0.2em] text-stone-500">
+                                    Light your way
+                                </span>
+                                <div class="mx-auto mt-3 h-px w-8 bg-amber-700/50"></div>
+                            </div>
+                        </div>
+
+                        <!-- Side candle -->
+                        <div
+                            class="absolute bottom-[20%] right-[13%] flex h-32 w-16 flex-col items-center justify-end rounded-t-xl rounded-b-lg border border-white/20 bg-gradient-to-r from-[#c8a77f] via-[#ead5b7] to-[#b08a69] shadow-xl sm:right-[16%] sm:h-40 sm:w-20 md:h-36 md:w-20 lg:h-44 lg:w-24">
+                            <div class="absolute -top-1 h-2 w-full rounded-full bg-[#f2dfc4]"></div>
+                            <span class="mb-5 font-serif text-[8px] tracking-widest text-stone-700 sm:text-[9px]">
+                                C.
+                            </span>
+                        </div>
+
+                        <!-- Floating label -->
+                        <div
+                            class="absolute bottom-4 left-4 rounded-xl border border-white/70 bg-white/80 px-3 py-2.5 shadow-lg backdrop-blur-sm sm:bottom-6 sm:left-6 sm:px-4 sm:py-3">
+                            <p class="font-serif text-sm italic text-stone-900 sm:text-base">
+                                Your moment of calm
+                            </p>
+                            <p class="mt-1 text-[9px] uppercase tracking-widest text-stone-500 sm:text-[10px]">
+                                Light something lovely
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="absolute -bottom-4 -right-2 hidden rounded-full border border-amber-900/10 bg-[#fffdf9] px-5 py-3 shadow-lg sm:block md:-right-4 lg:px-6 lg:py-4">
+                    <p class="font-serif text-sm italic text-stone-800 lg:text-base">
+                        Find your glow.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+             BENEFITS STRIP
+        ====================================================== -->
+    <section class="border-b border-stone-200 bg-white">
+        <div
+            class="mx-auto grid max-w-screen-2xl grid-cols-2 gap-y-6 px-4 py-7 sm:px-6 sm:py-8 md:grid-cols-4 md:gap-4 lg:px-10 xl:px-14">
+
+            <div class="flex items-center justify-center gap-3 md:justify-start">
+                <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-amber-50 text-amber-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 3v3m0 0a5 5 0 0 0-5 5v2l-2 3h14l-2-3v-2a5 5 0 0 0-5-5zM9 19h6" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-xs font-semibold text-stone-900 sm:text-sm">Beautiful Ambience</p>
+                    <p class="mt-1 text-[10px] text-stone-500 sm:text-xs">Set the perfect mood</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center gap-3 md:justify-start">
+                <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-amber-50 text-amber-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11z" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-xs font-semibold text-stone-900 sm:text-sm">Thoughtful Gifting</p>
+                    <p class="mt-1 text-[10px] text-stone-500 sm:text-xs">Made for special moments</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center gap-3 md:justify-start">
+                <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-amber-50 text-amber-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 7h11v10H3zM14 10h4l3 3v4h-7z" />
+                        <circle cx="7" cy="19" r="2" />
+                        <circle cx="18" cy="19" r="2" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-xs font-semibold text-stone-900 sm:text-sm">Delivery Options</p>
+                    <p class="mt-1 text-[10px] text-stone-500 sm:text-xs">Convenience to your door</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center gap-3 md:justify-start">
+                <div class="flex size-10 shrink-0 items-center justify-center rounded-full bg-amber-50 text-amber-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 3 4.5 6v5.5c0 4.5 3 7.5 7.5 9.5 4.5-2 7.5-5 7.5-9.5V6L12 3z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 12 2 2 4-4" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-xs font-semibold text-stone-900 sm:text-sm">Easy Shopping</p>
+                    <p class="mt-1 text-[10px] text-stone-500 sm:text-xs">A simple buying experience</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+             SHOP BY COLLECTION
+        ====================================================== -->
+    <section class="mx-auto w-full max-w-screen-2xl px-4 py-14 sm:px-6 sm:py-16 md:py-20 lg:px-10 lg:py-24 xl:px-14">
+
+        <div class="mx-auto max-w-2xl text-center">
+            <p class="text-[10px] font-semibold uppercase tracking-[0.25em] text-amber-800 sm:text-xs">
+                Find your favorite
+            </p>
+
+            <h2 class="mt-3 font-serif text-3xl leading-tight text-stone-900 sm:text-4xl lg:text-5xl">
+                Shop by collection
+            </h2>
+
+            <p class="mx-auto mt-4 max-w-xl text-sm leading-7 text-stone-600 sm:text-base">
+                Whether you are unwinding after a long day or creating
+                a welcoming space, find a candle for every mood.
+            </p>
+        </div>
+
+        <div class="mt-9 grid grid-cols-1 gap-5 min-[480px]:grid-cols-2 sm:mt-12 sm:gap-6 lg:grid-cols-3 lg:gap-8">
+
+            <!-- Collection 1 -->
+            <a href="/collections/relaxation"
+                class="group relative flex min-h-[300px] flex-col justify-end overflow-hidden rounded-2xl bg-[#e9d9c5] p-5 sm:min-h-[350px] sm:p-7 lg:min-h-[400px]">
+
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-[#eee4d5] via-[#d6bca0] to-[#a9896a] transition duration-500 group-hover:scale-105">
+                </div>
+
+                <div
+                    class="absolute left-1/2 top-1/3 flex h-28 w-20 -translate-x-1/2 flex-col items-center justify-end rounded-t-xl rounded-b-md border border-white/50 bg-gradient-to-r from-[#a47b5c] to-[#d0b090] shadow-xl transition duration-500 group-hover:-translate-y-2 sm:h-36 sm:w-24">
+                    <span class="mb-5 font-serif text-xs tracking-widest text-white">CALM</span>
+                </div>
+
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/75 via-stone-900/10 to-transparent"></div>
+
+                <div class="relative z-10">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-amber-200 sm:text-xs">
+                        Slow down
+                    </p>
+
+                    <h3 class="mt-2 font-serif text-2xl text-white sm:text-3xl">
+                        Relaxation
+                    </h3>
+
+                    <span class="mt-4 inline-flex items-center gap-2 text-xs font-medium text-white sm:text-sm">
+                        Explore collection
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 transition group-hover:translate-x-1"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                        </svg>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Collection 2 -->
+            <a href="/collections/home"
+                class="group relative flex min-h-[300px] flex-col justify-end overflow-hidden rounded-2xl bg-[#d9c3a7] p-5 sm:min-h-[350px] sm:p-7 lg:min-h-[400px]">
+
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-[#e7d9c5] via-[#c9ad8c] to-[#99795b] transition duration-500 group-hover:scale-105">
+                </div>
+
+                <div
+                    class="absolute left-1/2 top-1/3 flex h-32 w-24 -translate-x-1/2 flex-col items-center justify-end rounded-t-2xl rounded-b-lg border border-white/50 bg-gradient-to-r from-[#f6e7d1] via-[#e8d4b8] to-[#c7a886] shadow-xl transition duration-500 group-hover:-translate-y-2 sm:h-40 sm:w-28">
+                    <span class="mb-5 font-serif text-xs tracking-widest text-stone-700">HOME</span>
+                </div>
+
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/75 via-stone-900/10 to-transparent"></div>
+
+                <div class="relative z-10">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-amber-200 sm:text-xs">
+                        Make it yours
+                    </p>
+
+                    <h3 class="mt-2 font-serif text-2xl text-white sm:text-3xl">
+                        Home & Living
+                    </h3>
+
+                    <span class="mt-4 inline-flex items-center gap-2 text-xs font-medium text-white sm:text-sm">
+                        Explore collection
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 transition group-hover:translate-x-1"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                        </svg>
+                    </span>
+                </div>
+            </a>
+
+            <!-- Collection 3 -->
+            <a href="/collections/gifts"
+                class="group relative flex min-h-[300px] flex-col justify-end overflow-hidden rounded-2xl bg-[#e8d5bf] p-5 sm:col-span-2 sm:min-h-[350px] sm:p-7 lg:col-span-1 lg:min-h-[400px]">
+
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-[#eee0cd] via-[#d6b496] to-[#b08362] transition duration-500 group-hover:scale-105">
+                </div>
+
+                <div
+                    class="absolute left-1/2 top-1/3 flex h-28 w-24 -translate-x-1/2 flex-col items-center justify-end rounded-xl border border-white/50 bg-gradient-to-br from-[#fff8ed] via-[#f1dfc7] to-[#d7b99a] shadow-xl transition duration-500 group-hover:-translate-y-2 sm:h-36 sm:w-28">
+                    <span class="mb-5 font-serif text-xs tracking-widest text-stone-700">GIFT</span>
+                </div>
+
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-950/75 via-stone-900/10 to-transparent"></div>
+
+                <div class="relative z-10">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-amber-200 sm:text-xs">
+                        Give a little joy
+                    </p>
+
+                    <h3 class="mt-2 font-serif text-2xl text-white sm:text-3xl">
+                        Gifts & Moments
+                    </h3>
+
+                    <span class="mt-4 inline-flex items-center gap-2 text-xs font-medium text-white sm:text-sm">
+                        Explore collection
+                        <svg xmlns="http://www.w3.org/2000/svg" class="size-4 transition group-hover:translate-x-1"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                        </svg>
+                    </span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+             BEST SELLERS
+        ====================================================== -->
+    <section class="border-y border-stone-200 bg-[#faf6f0]">
+        <div class="mx-auto w-full max-w-screen-2xl px-4 py-14 sm:px-6 sm:py-16 md:py-20 lg:px-10 lg:py-24 xl:px-14">
+
+            <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+
+                <div>
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.25em] text-amber-800 sm:text-xs">
+                        Loved by candle lovers
+                    </p>
+
+                    <h2 class="mt-3 font-serif text-3xl leading-tight text-stone-900 sm:text-4xl lg:text-5xl">
+                        Our best sellers
+                    </h2>
+
+                    <p class="mt-3 max-w-xl text-sm leading-7 text-stone-600 sm:text-base">
+                        Discover beautiful picks to make your everyday
+                        rituals feel a little more special.
+                    </p>
+                </div>
+
+                <a href="/shop?category=best-sellers"
+                    class="inline-flex w-fit items-center gap-2 border-b border-amber-800 pb-1 text-sm font-medium text-stone-800 transition hover:text-amber-800">
+                    Shop all candles
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                    </svg>
+                </a>
+
+            </div>
+
+            <!-- Product Grid -->
+            <div
+                class="mt-9 grid grid-cols-2 gap-x-4 gap-y-8 min-[480px]:gap-x-5 sm:mt-12 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4 lg:gap-8">
+
+                <!-- Product 1 -->
+                <article class="group min-w-0">
+
+                    <a href="/product/amber-glow" class="relative block overflow-hidden rounded-xl bg-[#e8d8c4]">
+
+                        <div
+                            class="relative flex aspect-[4/5] items-center justify-center overflow-hidden bg-gradient-to-br from-[#f1e3d0] to-[#c5a382] transition duration-500 group-hover:scale-[1.01]">
+
+                            <div
+                                class="relative flex h-[52%] w-[43%] flex-col items-center justify-end rounded-t-xl rounded-b-lg border border-white/30 bg-gradient-to-r from-[#80563b] via-[#a87955] to-[#70472f] shadow-2xl transition duration-500 group-hover:-translate-y-1">
+                                <div class="absolute -top-1 h-2 w-full rounded-full bg-[#d5b28f]"></div>
+                                <div class="mb-5 text-center">
+                                    <p class="font-serif text-[9px] tracking-widest text-amber-50 sm:text-xs">CANDLES
+                                    </p>
+                                    <p class="mt-1 text-[7px] uppercase tracking-widest text-amber-100/80">Amber glow
+                                    </p>
+                                </div>
+                            </div>
+
+                            <span
+                                class="absolute left-2 top-2 rounded-md bg-white/90 px-2 py-1 text-[9px] font-semibold uppercase tracking-wider text-stone-700 sm:left-3 sm:top-3 sm:text-[10px]">
+                                Favorite
+                            </span>
+                        </div>
+                    </a>
+
+                    <div class="pt-3 sm:pt-4">
+                        <p class="text-[9px] font-medium uppercase tracking-[0.15em] text-stone-500 sm:text-[10px]">
+                            Warm & inviting
+                        </p>
+
+                        <a href="/product/amber-glow"
+                            class="mt-1 block truncate font-serif text-base text-stone-900 transition hover:text-amber-800 sm:text-lg lg:text-xl">
+                            Amber Glow
+                        </a>
+
+                        <div class="mt-2 flex flex-wrap items-center justify-between gap-2">
+                            <span class="text-xs text-stone-600 sm:text-sm">
+                                View details
+                            </span>
+
+                            <a href="/product/amber-glow" aria-label="View Amber Glow candle"
+                                class="inline-flex size-8 items-center justify-center rounded-full border border-stone-300 text-stone-800 transition hover:border-stone-900 hover:bg-stone-900 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="group min-w-0">
+
+                    <a href="/product/soft-vanilla" class="relative block overflow-hidden rounded-xl bg-[#e9d8c1]">
+
+                        <div
+                            class="relative flex aspect-[4/5] items-center justify-center overflow-hidden bg-gradient-to-br from-[#f5e8d4] to-[#d5b995]">
+
+                            <div
+                                class="relative flex h-[57%] w-[45%] flex-col items-center justify-end rounded-t-2xl rounded-b-lg border border-white/60 bg-gradient-to-r from-[#fff9ef] via-[#f0dfc8] to-[#cbb092] shadow-2xl transition duration-500 group-hover:-translate-y-1">
+                                <div class="absolute -top-1 h-2 w-full rounded-full bg-[#fffaf0]"></div>
+                                <div class="mb-6 text-center">
+                                    <p class="font-serif text-[9px] tracking-widest text-stone-800 sm:text-xs">CANDLES
+                                    </p>
+                                    <p class="mt-1 text-[7px] uppercase tracking-widest text-stone-500">Soft vanilla</p>
+                                </div>
+                            </div>
+
+                            <span
+                                class="absolute left-2 top-2 rounded-md bg-stone-900/90 px-2 py-1 text-[9px] font-semibold uppercase tracking-wider text-white sm:left-3 sm:top-3 sm:text-[10px]">
+                                Cozy pick
+                            </span>
+                        </div>
+                    </a>
+
+                    <div class="pt-3 sm:pt-4">
+                        <p class="text-[9px] font-medium uppercase tracking-[0.15em] text-stone-500 sm:text-[10px]">
+                            Soft & comforting
+                        </p>
+
+                        <a href="/product/soft-vanilla"
+                            class="mt-1 block truncate font-serif text-base text-stone-900 transition hover:text-amber-800 sm:text-lg lg:text-xl">
+                            Soft Vanilla
+                        </a>
+
+                        <div class="mt-2 flex flex-wrap items-center justify-between gap-2">
+                            <span class="text-xs text-stone-600 sm:text-sm">
+                                View details
+                            </span>
+
+                            <a href="/product/soft-vanilla" aria-label="View Soft Vanilla candle"
+                                class="inline-flex size-8 items-center justify-center rounded-full border border-stone-300 text-stone-800 transition hover:border-stone-900 hover:bg-stone-900 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="group min-w-0">
+
+                    <a href="/product/earth-and-wood" class="relative block overflow-hidden rounded-xl bg-[#ded1bd]">
+
+                        <div
+                            class="relative flex aspect-[4/5] items-center justify-center overflow-hidden bg-gradient-to-br from-[#e9e0d1] to-[#a99b82]">
+
+                            <div
+                                class="relative flex h-[54%] w-[46%] flex-col items-center justify-end rounded-t-xl rounded-b-lg border border-white/20 bg-gradient-to-r from-[#4c493c] via-[#716c58] to-[#454335] shadow-2xl transition duration-500 group-hover:-translate-y-1">
+                                <div class="absolute -top-1 h-2 w-full rounded-full bg-[#b4a990]"></div>
+                                <div class="mb-6 text-center">
+                                    <p class="font-serif text-[9px] tracking-widest text-stone-100 sm:text-xs">CANDLES
+                                    </p>
+                                    <p class="mt-1 text-[7px] uppercase tracking-widest text-stone-300">Earth & wood</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+
+                    <div class="pt-3 sm:pt-4">
+                        <p class="text-[9px] font-medium uppercase tracking-[0.15em] text-stone-500 sm:text-[10px]">
+                            Earthy & grounded
+                        </p>
+
+                        <a href="/product/earth-and-wood"
+                            class="mt-1 block truncate font-serif text-base text-stone-900 transition hover:text-amber-800 sm:text-lg lg:text-xl">
+                            Earth & Wood
+                        </a>
+
+                        <div class="mt-2 flex flex-wrap items-center justify-between gap-2">
+                            <span class="text-xs text-stone-600 sm:text-sm">
+                                View details
+                            </span>
+
+                            <a href="/product/earth-and-wood" aria-label="View Earth and Wood candle"
+                                class="inline-flex size-8 items-center justify-center rounded-full border border-stone-300 text-stone-800 transition hover:border-stone-900 hover:bg-stone-900 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="group min-w-0">
+
+                    <a href="/product/golden-hour" class="relative block overflow-hidden rounded-xl bg-[#ead7bd]">
+
+                        <div
+                            class="relative flex aspect-[4/5] items-center justify-center overflow-hidden bg-gradient-to-br from-[#f6e4c8] to-[#c59c6e]">
+
+                            <div
+                                class="relative flex h-[58%] w-[44%] flex-col items-center justify-end rounded-t-2xl rounded-b-lg border border-white/60 bg-gradient-to-r from-[#d6b58b] via-[#f0d6ae] to-[#b78b5e] shadow-2xl transition duration-500 group-hover:-translate-y-1">
+                                <div class="absolute -top-1 h-2 w-full rounded-full bg-[#fae7c7]"></div>
+                                <div class="mb-6 text-center">
+                                    <p class="font-serif text-[9px] tracking-widest text-stone-800 sm:text-xs">CANDLES
+                                    </p>
+                                    <p class="mt-1 text-[7px] uppercase tracking-widest text-stone-600">Golden hour</p>
+                                </div>
+                            </div>
+
+                            <span
+                                class="absolute left-2 top-2 rounded-md bg-amber-800 px-2 py-1 text-[9px] font-semibold uppercase tracking-wider text-white sm:left-3 sm:top-3 sm:text-[10px]">
+                                Gift idea
+                            </span>
+                        </div>
+                    </a>
+
+                    <div class="pt-3 sm:pt-4">
+                        <p class="text-[9px] font-medium uppercase tracking-[0.15em] text-stone-500 sm:text-[10px]">
+                            Golden & glowing
+                        </p>
+
+                        <a href="/product/golden-hour"
+                            class="mt-1 block truncate font-serif text-base text-stone-900 transition hover:text-amber-800 sm:text-lg lg:text-xl">
+                            Golden Hour
+                        </a>
+
+                        <div class="mt-2 flex flex-wrap items-center justify-between gap-2">
+                            <span class="text-xs text-stone-600 sm:text-sm">
+                                View details
+                            </span>
+
+                            <a href="/product/golden-hour" aria-label="View Golden Hour candle"
+                                class="inline-flex size-8 items-center justify-center rounded-full border border-stone-300 text-stone-800 transition hover:border-stone-900 hover:bg-stone-900 hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.7">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="mt-7 text-center text-xs leading-5 text-stone-500">
+                Product names and illustrations are sample content. Connect these cards to your actual product data.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+             BRAND STORY
+        ====================================================== -->
+    <section
+        class="mx-auto grid w-full max-w-screen-2xl grid-cols-1 items-center gap-9 px-4 py-14 sm:px-6 sm:py-16 md:grid-cols-2 md:gap-12 lg:gap-20 lg:px-10 lg:py-24 xl:px-14">
+
+        <!-- Decorative visual -->
+        <div class="relative mx-auto w-full max-w-lg md:mx-0 md:max-w-none">
+
+            <div class="relative overflow-hidden rounded-2xl bg-[#e9d9c5] p-5 sm:p-8 lg:p-10">
+
+                <div
+                    class="relative flex min-h-[300px] items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-[#f1e5d3] via-[#dfc6a8] to-[#b89571] sm:min-h-[390px] lg:min-h-[460px]">
+
+                    <div
+                        class="absolute left-1/2 top-1/2 size-48 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/30 sm:size-64">
+                    </div>
+
+                    <div
+                        class="absolute left-1/2 top-1/2 size-36 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/30 sm:size-48">
+                    </div>
+
+                    <div
+                        class="relative flex h-44 w-32 flex-col items-center justify-end rounded-t-2xl rounded-b-lg border border-white/60 bg-gradient-to-r from-[#fffaf0] via-[#f1dfc8] to-[#d2b696] shadow-2xl sm:h-56 sm:w-40 lg:h-64 lg:w-48">
+
+                        <div class="absolute -top-1 h-2 w-full rounded-full bg-[#fff9ee]"></div>
+
+                        <div
+                            class="absolute -top-11 left-1/2 h-8 w-5 -translate-x-1/2 rotate-6 rounded-[80%_20%_65%_35%] bg-gradient-to-t from-orange-400 to-yellow-100 shadow-lg shadow-amber-400/40">
+                        </div>
+
+                        <div class="mb-8 text-center sm:mb-10">
+                            <p class="font-serif text-sm tracking-[0.2em] text-stone-800 sm:text-base">CANDLES</p>
+                            <p class="mt-2 text-[8px] uppercase tracking-[0.2em] text-stone-500 sm:text-[9px]">A slower
+                                kind of living</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="absolute bottom-4 right-4 rounded-lg border border-white/60 bg-white/75 px-3 py-2 backdrop-blur sm:bottom-6 sm:right-6 sm:px-4 sm:py-3">
+                        <p class="font-serif text-sm italic text-stone-800 sm:text-base">
+                            Light a little joy.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Story content -->
+        <div class="mx-auto w-full max-w-xl text-center md:mx-0 md:text-left">
+
+            <p class="text-[10px] font-semibold uppercase tracking-[0.25em] text-amber-800 sm:text-xs">
+                The heart behind Candles
+            </p>
+
+            <h2 class="mt-4 font-serif text-3xl leading-tight text-stone-900 sm:text-4xl lg:text-5xl">
+                It's more than a candle.
+                <span class="mt-1 block font-normal italic text-amber-800">
+                    It's how a space makes you feel.
+                </span>
+            </h2>
+
+            <p class="mt-5 text-sm leading-7 text-stone-600 sm:text-base sm:leading-8">
+                We believe that the little things often make the biggest
+                difference. A soft glow at the end of a long day. A
+                welcoming fragrance when guests arrive. A thoughtful
+                gift that says what words cannot.
+            </p>
+
+            <p class="mt-4 text-sm leading-7 text-stone-600 sm:text-base sm:leading-8">
+                Candles is here to help you create those moments with
+                beautiful pieces that bring atmosphere, comfort, and
+                character into your everyday life.
+            </p>
+
+            <a href="/about"
+                class="mt-7 inline-flex min-h-12 items-center justify-center gap-3 rounded-lg bg-stone-900 px-7 py-3 text-sm font-medium text-white transition hover:bg-amber-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900">
+                Our Story
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                </svg>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+             GIFTING PROMOTION
+        ====================================================== -->
+    <section class="px-4 pb-14 sm:px-6 sm:pb-16 lg:px-10 lg:pb-24 xl:px-14">
+        <div
+            class="relative mx-auto max-w-screen-2xl overflow-hidden rounded-2xl bg-stone-900 px-5 py-12 text-center sm:px-10 sm:py-16 lg:px-16 lg:py-20">
+
+            <div class="absolute -left-20 -top-20 size-56 rounded-full border border-white/10 sm:size-80"></div>
+            <div class="absolute -bottom-32 -right-20 size-64 rounded-full border border-white/10 sm:size-96"></div>
+
+            <div class="relative z-10 mx-auto max-w-2xl">
+
+                <p class="text-[10px] font-semibold uppercase tracking-[0.25em] text-amber-300 sm:text-xs">
+                    Thoughtful gifts, lasting memories
+                </p>
+
+                <h2 class="mt-4 font-serif text-3xl leading-tight text-white sm:text-4xl lg:text-5xl">
+                    Give a gift that
+                    <span class="italic text-amber-300">feels like home.</span>
+                </h2>
+
+                <p class="mx-auto mt-5 max-w-xl text-sm leading-7 text-stone-300 sm:text-base sm:leading-8">
+                    Celebrate birthdays, thank-yous, new homes, and
+                    everyday kindness with a candle chosen with care.
+                </p>
+
+                <a href="/collections/gifts"
+                    class="mt-8 inline-flex min-h-12 items-center justify-center gap-3 rounded-lg bg-[#f3e5d2] px-7 py-3 text-sm font-semibold text-stone-900 transition hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300">
+                    Discover Gifts
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+             CANDLE CARE
+        ====================================================== -->
+    <section class="border-t border-stone-200 bg-[#f7f1e8]">
+        <div
+            class="mx-auto flex max-w-screen-2xl flex-col items-center justify-between gap-6 px-4 py-10 text-center sm:px-6 sm:py-12 md:flex-row md:text-left lg:px-10 xl:px-14">
+
+            <div class="max-w-2xl">
+                <p class="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-800 sm:text-xs">
+                    A little care goes a long way
+                </p>
+
+                <h2 class="mt-3 font-serif text-2xl text-stone-900 sm:text-3xl">
+                    Make every burn a better one.
+                </h2>
+
+                <p class="mt-3 text-sm leading-7 text-stone-600 sm:text-base">
+                    Learn how to care for your candle, get the most from
+                    every burn, and enjoy your favorite fragrances safely.
+                </p>
+            </div>
+
+            <a href="/candle-care"
+                class="inline-flex min-h-12 shrink-0 items-center justify-center gap-3 rounded-lg border border-stone-300 bg-white px-6 py-3 text-sm font-medium text-stone-800 transition hover:border-amber-800 hover:text-amber-900">
+                Candle Care Guide
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" />
+                </svg>
+            </a>
+
+        </div>
+    </section>
+
+</main>
+{% endblock content %}
